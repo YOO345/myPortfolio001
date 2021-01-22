@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>친환경운전</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script>
+        $(function() { /// jQB //////////////
+
+            $(".gnb").hover(
+            function() {//over
+                $(".gnbbg").css({
+                    height:"170px"
+                });
+            },
+            function() {//out
+                $(".gnbbg").css({
+                    height:"0px"
+                });
+            }); //// hover //////////////////
+
+
+        }); ///////// jQB ////////////////
+    </script>
+</head>
+
+<body>
+    <!-- 1. 상단 부분 -->
+    <div id="top">
+        <div class="gnbbg"></div>
+        <header class="top ibx clb">
+
+            <div class="col-2 t1 lbx">
+                <!--1-1.로고-->
+                <div class="logo">
+                    <a href=""><img src="img/logo.jpg" alt=""></a>
+                </div>
+
+            </div>
+            <div class="col-7 t1 navbx">
+                <!--1-2.GNB메뉴-->
+                <nav class="gnb clb">
+                    <dl>
+                        <dt><a href="">친환경운전 소개</a></dt>
+                        <dd><a href="">친환경운전이란?</a></dd>
+                        <dd><a href="">친환경운전 10가지 약속</a></dd>
+                        <dd><a href="">친환경운전 이야기</a></dd>
+                        <dd><a href="">CI/슬로건</a></dd>
+                        <dd><a href="">What's new</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="">친환경 운전 참여하기</a></dt>
+                        <dd><a href="">공지사항</a></dd>
+                        <dd><a href="">Q&amp;A</a></dd>
+                        <dd><a href="">친환경운전 차계부</a></dd>
+                        <dd><a href="">저공해자동차 알아보기</a></dd>
+                        <dd><a href="">저공해자동차 검색</a></dd>
+                        <dd><a href="">하이브리드 보조금조회</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="">친환경운전 알아보기</a></dt>
+                        <dd><a href="">알림/뉴스</a></dd>
+                        <dd><a href="">정책소식</a></dd>
+                        <dd><a href="">E-Book</a></dd>
+                        <dd><a href="">동영상</a></dd>
+                        <dd><a href="">공모전</a></dd>
+                    </dl>
+                </nav>
+            </div>
+            <!--1-3. 홈 메뉴-->
+            <div class="col-3 t1">
+                <div id="tmenu">
+                    <div class="tmenu">
+                        <ul>
+                            <li><a href="">HOME </a></li>
+                            <li><a href="">로그인</a></li>
+                            <li><a href="">회원가입</a></li>
+                        </ul>
+                    </div>
+                    <!--1-4. 검색창 -->
+                    <div class="srch">
+                        <input type="text">
+                        <button type="submit"><i class="srchicon"></i></button>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <!-- 2. 메인 이미지 및 배너 부분 -->
+    <div id="bg">
+
+        <div class="slide">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+        <section class="banner ibx">
+            <!-- 2-1.메인이미지 -->
+            <div class="ban clb">
+                <!-- 2-2.메인 배너 -->
+                <div class="col-12 b1">
+                </div>
+                <!-- 2-4. 왼쪽 버튼 -->
+                <a href="" class="abtn lb">
+                    <span class="bld">배너 왼쪽 이동 버튼</span>
+                </a>
+                <!-- 2-5. 오른쪽 버튼 -->
+                <a href="" class="abtn rb">
+                    <span class="bld">배너 오른쪽 이동 버튼</span>
+                </a>
+            </div>
+        </section>
+    </div>
+    <!-- 3. 중단 메뉴 부분 -->
+    <div id="mmenu">
+        <section class="mmenu ibx">
+            <div class="nav2 clb">
+                <div class="col-3 m1">
+                    <div class="icobx">
+                        <a href="">
+
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3 m1">
+                    <div class="icobx">
+                        <a href="">
+
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3 m1">
+                    <div class="icobx">
+                        <a href="">
+
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3 m1">
+                    <div class="icobx">
+                        <a href="">
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- 4. 컨텐츠 부분 -->
+    <div id="cont">
+        <section class="cont ibx clb">
+            <div class="col-3 c1 lban">
+                <a href=""></a>
+            </div>
+            <div class="col-5 c1 ">
+                <div class="anno">
+                    <a href="" class="anno-li1">공지사항</a>
+                    <a href=" " class="anno-li2">MORE
+                        <span class="ico"></span></a>
+
+                </div>
+            </div>
+            <div class="col-4 c1">
+
+            </div>
+        </section>
+    </div>
+    <!--5. 하단 부분 -->
+    <div id="info">
+        <footer class="info ibx clb">
+
+
+            <div class="col-12 i1">
+                <!--5-1. 환경부 로고-->
+                <h1 class="flogo1">
+                    <img src="img/footer-logo1.jpg" alt="" class="footlogo1">
+                </h1>
+                <!--5-2. 환경부 로고-->
+                <h1 class="flogo2">
+                    <img src="img/footer-logo2.jpg" alt="" class="footlogo2">
+                </h1>
+                <p class="copyright">
+                    Copyright 2017 Korea Automobile Environmental Association All right reserved.
+                </p>
+            </div>
+
+        </footer>
+    </div>
+
+
+
+
+
+
+
+
+    <!--그리드뷰-->
+    <ul class="grid">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body></html>
