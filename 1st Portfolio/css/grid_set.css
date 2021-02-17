@@ -62,7 +62,7 @@
     /*옆으로 흐르기*/
     padding: 10px;
     box-sizing: border-box;
-    outline: 2px dotted blue;
+/*    outline: 2px dotted blue;*/
 }
 
 /*float해제를 위한 class*/
