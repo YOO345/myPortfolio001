@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMW M3</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/scrollAction.js"></script>
+    <!--
+    <script src="js/smoothScroll20.js"></script>
+    <script src="js/smoothScroll.js"></script>
+-->
+
+    <script>
+        
+
+
+    </script>
+</head>
+
+<body>
+    <!--1. 상단영역-->
+    <div class="top">
+        <header id="top" class="ibx">
+            <!--로고-->
+            <div id="logo" class="mlogo">
+                <a href="#">
+                    <img src="img/BMW_White_Logo.svg" alt="로고">
+                </a>
+            </div>
+
+            <!--GNB메뉴-->
+            <!--
+               a 요소의 href값으로 "#아이디명" 을 사용하면
+               같은 페이지안의 해당 아이디 위치로 바로 이동한다!
+               (a태그의 기본 기능!!!)
+           -->
+            <nav class="gnb">
+                <ul>
+                    <li class="on">
+                        <a href="#pg1" class="home">Home</a>
+                    </li>
+                    <li><a href="#pg2" class="home">Overview</a></li>
+                    <li><a href="#pg3" class="home">Performance</a></li>
+                    <li><a href="#pg4" class="home">Design</a></li>
+                    <li><a href="m3_gallery1.html">Gallery</a></li>
+                </ul>
+            </nav>
+            <!-- 서브로고 -->
+            <div id="logo" class="sublogo">
+                <a href="#">
+                    <img src="img/BMW_M_logo.png" alt="로고">
+                </a>
+            </div>
+        </header>
+    </div>
+
+
+    <!-- 2. 메인 페이지 영역 -->
+    <section id="pg1" class="page">
+        <!-- 타이틀 박스 -->
+        <div class="maintitle">
+            <!-- 메인 타이틀 -->
+            <h1 class="mtit-1">THE M3</h1>
+            <!-- 서브 타이틀-->
+            <h3 class="mtit-2">THE ALL-NEW BMW M3 SEDAN</h3>
+        </div>
+        <!-- 서브 로고 -->
+        <div id="logo" class="sublogo-1">
+            <img src="img/BMW_M_logo.png" alt="로고">
+        </div>
+    </section>
+    <!-- 3. 오버뷰 영역 -->
+    <section id="pg2" class="page">
+        <!-- 오버뷰 박스 -->
+        <div class="oview">
+            <!-- 버튼 -->
+            <a href="" class="abtn lb">
+                <span class="bld">왼쪽이동버튼</span>
+            </a>
+            <img class="on" src="img/m3overview/33.png" alt="엠쓰리랜더링">
+            <img src="img/m3overview/.png" alt="엠쓰리랜더링">
+<!--                img[img/m3overview/$.png alt="엠쓰랜더링"]*36-->
+            
+            <a href="" class="abtn rb">
+                <span class="bld">오른쪽이동버튼</span>
+            </a>
+        </div>
+        <!-- 설명 박스 -->
+        <div class="txtbox ibx">
+            <!-- 좌측 설명 박스 -->
+            <div class="ltxt">
+                <p>Pulls you in with addictive style. Blows you away <br>with BMW M engineering. This is the M3.</p>
+            </div>
+            <!-- 우측 설명 박스 -->
+            <div class="rtxt">
+                <table class="spec">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>HP</th>
+                            <th>0 - 60 MPH&nbsp;&nbsp; <a href="" class="tooltip" data-tit="BMW AG preliminary test results. Actual acceleration results may vary, depending on specification of vehicle; road and environmental conditions; testing procedures and driving style. These results should be used for comparison only and verification should not be attempted on public roads. BMW urges you to obey all posted speed laws and always wear safety belts.">?</a></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>M3 Competition Sedan</th>
+                            <td>503</td>
+                            <td>3.8 sec</td>
+                        </tr>
+                        <tr>
+                            <th>M3 Sedan</th>
+                            <td>473</td>
+                            <td>4.1 sec</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <!--
+                <p>  </p>
+                <p> Sedan   </p>
+                <p> 473 4.1 sec</p>
+-->
+            </div>
+        </div>
+    </section>
+    <!-- 4. 퍼포먼스 영역 -->
+    <section id="pg3" class="page">
+        <!-- 첫 번째 섹션 -->
+        <section class="pg3-1">
+            <!-- 텍스트 -->
+            <div class="pg3title pgtxT">
+                <h3>PERFORMANCE</h3>
+                <h1>MAKE YOUR MOVE</h1>
+                <p>Excitement knows no bounds in this extreme sports sedan. <br> BMW M engineering levels up every drive with unmatched agility and power.</p>
+            </div>
+            <!-- 이미지-->
+            <img src="img/BMW-MY21-M3-Overview-Performance-01-Mobile2.png" alt="페이지메인이미지">
+        </section>
+        <!-- 두 번째 섹션-->
+        <section class="pg3-2">
+            <!-- 텍스트 -->
+            <div class="pg3-2title pgTxt pgbx">
+                <h3>More power to you.</h3>
+                <p>The incredible 3.0-liter BMW M TwinPower Turbo inline 6-cylinder engine outperforms your competitors with a 0-60 mph acceleration time of just 3.8 seconds and a staggering 503 horsepower in the Competition model.</p>
+            </div>
+            <!-- 이미지 -->
+            <img src="img/2.jpg" alt="첫번째상세이미지">
+        </section>
+        <!-- 세 번째 섹션 -->
+        <section class="pg3-3">
+            <!-- 텍스트 -->
+            <div class="pg3-3title pgTxt pgbx">
+                <h3>Transmissions for all.</h3>
+                <p>A manual transmission comes standard for the performance-obsessed, while the standard 8-speed M STEPTRONIC Transmission in the M3 Competition model offers instantaneous and precise shifts.
+                </p>
+            </div>
+            <!-- 이미지 -->
+            <img src="img/3.jpg" alt="두번째상세이미지">
+        </section>
+        <!-- 네 번째 섹션 -->
+        <section class="pg3-4">
+            <!-- 텍스트 -->
+            <div class="pg3-4title pgTxt pgbx">
+                <h3>Dynamics for the next personal best.</h3>
+                <p>Achieve next-level agility, traction, and handling on the track or during your daily commute with the standard M Sport Differential and Adaptive M Suspension.</p>
+            </div>
+            <!-- 이미지 -->
+            <img src="img/4.webp" alt="세번째상세이미지">
+        </section>
+        <!-- 다섯 번째 섹션-->
+        <section class="pg3-5">
+            <!-- 텍스트 -->
+            <div class="pg3-5title pgTxt pgbx">
+                <h3>Bold brakes.</h3>
+                <p>Standard M Compound brakes with red, blue, or black calipers provide exceptional stopping power. Choose the available M Carbon Ceramic brakes with gold calipers for high-performance driving and a high-profile look.
+                </p>
+            </div>
+            <!-- 이미지 -->
+            <img src="img/5.jpg" alt="네번째상세이미지">
+        </section>
+    </section>
+    <!-- 5. 디자인 영역 -->
+    <section id="pg4" class="page">
+        <div class="pg3title">
+            <h3>DESIGN</h3>
+            <h1>AN AGGRESSIVE PROFILE</h1>
+            <p>
+                From all points of view, the All-New BMW M3 stuns with performance-centric details and attention-grabbing style.</p>
+        </div>
+        <div>
+        </div>
+    </section>
+
+
+
+</body></html>

@@ -1,0 +1,373 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    /*화면기준*/
+    /*    overflow: hidden;*/
+    /*스크롤바 없애기(스크롤안됨!)*/
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*공통셋팅*/
+a {
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 0 0 2px #777;
+    font-size: 1.25rem;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+li {
+    float: left;
+}
+
+
+/*공통 class*/
+
+/*페이지 공통 class*/
+.page {
+    position: relative;
+    /*부모자격*/
+    width: 100%;
+    height: 100%;
+    /*
+                width: 100vw;
+                height: 100vh;
+                보이는 화면 기준의 뷰포트단위를 쓰면
+                body의 height 100% 가 필요없다!
+                단, vw단위는 스크롤바 트랙까지 포함한
+                화면 전체를 기준하므로
+                데이스크 탑에서는 100%를 쓰는게 좋다!
+                (가로스크롤바가 생기기때문!)
+            */
+
+}
+
+/*IR(배경이미지 설명 숨기기)*/
+.bld {
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+/*중앙박스*/
+.ibx {
+    width: 1920px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/*상단영역*/
+.top {
+    position: fixed;
+    /*상단고정*/
+    width: 100%;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.60);
+}
+
+#top {
+    height: 80px;
+    /*outline: 1px solid lime;*/
+}
+
+/*로고*/
+#logo {
+    position: absolute;
+}
+
+#logo img {
+    width: 100%;
+}
+
+.mlogo {
+    width: 80px;
+    height: 80px;
+    /*    top: px;*/
+    left: 100px;
+}
+
+.sublogo {
+    top: 20px;
+    right: 100px;
+    width: 100px;
+}
+
+/*GNB메뉴*/
+.gnb {
+    position: absolute;
+    /*부모는? #top*/
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gnb li {
+    margin: 0px;
+    padding: 0 40px;
+}
+
+/*마우스오버시 a요소변경*/
+/*동시에 선택된 메뉴 클래스 on*/
+.gnb a:hover,
+.gnb li.on a {
+    color: #fff;
+
+}
+
+/*마우스오버시 li변경*/
+/*동시에 선택된 메뉴 클래스 on*/
+.gnb li:hover,
+.gnb li.on {
+    transform: scale(1.2);
+    transition: all .3s ease-in-out;
+}
+
+.gnb li.on {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+
+/* 개별페이지 셋팅 */
+/*  페이지 영역 */
+/* 2. 메인 페이지 */
+#pg1 {
+    background: url(../img/main01.jpg) no-repeat top/cover;
+    /*    -webkit-mask-image: linear-gradient(to bottom, black 90%, transparent 130%);*/
+}
+
+/* 타이틀 박스 */
+.maintitle {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    color: #fff;
+}
+
+/* 메인 타이틀 */
+.mtit-1 {
+    font-size: 4rem;
+    margin: 10px 0;
+}
+
+/* 서브 타이틀 */
+.mtit-2 {
+    font-size: 1.75rem;
+    margin: 0;
+}
+
+/* 서브로고 */
+.sublogo-1 {
+    position: absolute;
+    bottom: 80px;
+    right: 100px;
+    width: 80px;
+}
+
+/* 3. 오버뷰 페이지 */
+#pg2 {
+    background: #000;
+}
+
+/* 오버 뷰 박스 */
+.oview {
+
+
+}
+
+/* 오버뷰 이미지 */
+.oview img {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*이동버튼 공통*/
+.abtn {
+    position: absolute;
+    top: 36%;
+    transform: translateY(-50%);
+/*    세로중앙이동*/
+    width: 56px;
+    height: 111px;
+    background: url(../img/mv_btns.png) no-repeat;
+/*    outline: 1px solid red;*/
+}
+
+.rb {
+    right: 20%;
+    background-position: 0 -100px;
+}
+
+/*왼쪽버튼*/
+.lb {
+    left: 20%;
+    background-position: -232px 0;
+}
+
+/* 텍스트 박스*/
+.txtbox {
+    position: absolute;
+    display: flex;
+    height: 130px;
+    bottom: 15%;
+}
+
+/* 텍스트 색상 */
+.txtbox {
+    color: #fff;
+}
+
+/* 좌측 텍스트 박스 */
+.ltxt {
+    width: 50%;
+    font-size: 34px;
+    font-weight: bold;
+    border-right: 1px solid #fff;
+}
+
+.ltxt p {
+    margin-top: 25px;
+    padding-left: 10%;
+}
+
+/* 우측 텍스트 박스*/
+.rtxt {
+    width: 40%;
+}
+
+/* 테이블 설정 */
+table {
+    width: 100%;
+    /* margin-top: 0px;*/
+}
+
+table,
+th,
+td {
+    padding: 7px;
+    text-align: center;
+}
+
+/* 툴팁 설정 */
+#tip {
+    position: absolute;
+    top: 300px;
+    width: 300px;
+    color: #fff;
+    padding: 5px;
+
+    background: #000;
+    border: 1px solid #fff;
+
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+/* 4. 퍼포먼스 영역 */
+#pg3 {
+    background-color: #000;
+    height: 580%;
+}
+
+.pg3-1 img {
+    width: 100%;
+}
+
+
+/* 페이지 타이틀 */
+.pg3title {
+    margin-top: 5%;
+    width: 100%;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+}
+
+.pg3title h3 {
+    font-size: 20px;
+}
+
+.pg3title h1 {
+    font-size: 36px;
+}
+
+.pg3-title p {
+    font-size: 20px;
+}
+
+
+/* 페이지 텍스트 박스 */
+.pgbx {
+    position: absolute;
+    width: 550px;
+    color: #fff;
+    right: 5%;
+}
+
+.pgbx h3 {
+    font-size: 36px;
+}
+
+.pgbx p {
+    font-size: 16px;
+}
+
+.pg3-2title {
+    top: 36%;
+}
+
+.pg3-3title {
+    top: 53%;
+}
+
+.pg3-4title {
+    top: 68%;
+}
+
+.pg3-5title {
+    bottom: 11.5%;
+}
+
+/* 페이지 박스 트랜지션 */
+.pgTxt {
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+
+
+#pg4 {
+    background: #000;
+    height: 150%;
+}
+
+#pg6 {
+    background: url(../img/main01.jpg) no-repeat top/cover;
+}
+
+#pg7 {
+    background: url(../img/main01.jpg) no-repeat top/cover;
+}
